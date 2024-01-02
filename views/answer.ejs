@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Answer The Question</h1>
+    <form action="/answer" method="post">
+      <div class="form-group">
+        <label for="name"
+          >Name[Write anonymous if you do not want to specify]</label
+        >
+        <input type="text" class="form-control" id="name" name="namArea" />
+        <label for="answer">Answer</label>
+        <textarea
+          class="form-control"
+          id="answer"
+          rows="3"
+          name="ansArea"
+        ></textarea>
+        </div>
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<div class="container-login">
+  <div class="left">
+          <!-- Makes POST request to /login route -->
+          <div class="head">Welcome to JUITConnect !</div>
+          <form action="/login" method="POST">
+            <div class="form">
+            <div class="form-group">
+              <label for="EnrollmentNo">Enrollment Number:</label>
+              <input type="text" class="form-control" name="EnrollmentNo">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <div class="form-group login">
+              <button type="submit" class="submit-btn">Login</button>
+            </div>
+          </div>
+          </form>
+  </div>
+</div>
+<div class="image">
+  <img src="images/computer.png" alt="xoxo">
+</div>
+</body>
+</html>

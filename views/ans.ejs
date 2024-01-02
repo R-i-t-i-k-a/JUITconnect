@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/forms.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="answer">
+      <p><%= ques.question %></p>
+      <% ans.forEach(function(bPost){ %>
+        <h3><%= bPost.name %></h3>
+        <p><%= bPost.answer %></p>
+        <hr>
+    <% }) %>
+      <a href="/answer"><button type="submit">Answer!</button></a>
+    </div>
+  </body>
+</html>
